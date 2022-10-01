@@ -21,6 +21,9 @@ router.get('/accounts', function (req, res, next) {
         res.render('accounts.ejs', { data });
     })
 });
+router.get('/', function (req, res, next) {
+    res.render('index.ejs');
+});
 router.post('/details', function (req, res, next) {
     if (req.body.user_name) {
         Account.findOne({ where: { id: req.body.user_name } }).then((data) => {
