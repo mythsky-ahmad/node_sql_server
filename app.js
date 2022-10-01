@@ -5,6 +5,7 @@ const router = express.Router();
 var path = require('path')
 var testRouter = require('./routes/web');
 var bodyParser = require('body-parser')
+const db = require('./db');
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 app.use(bodyParser.json());       // to support JSON-encoded bodies
@@ -20,6 +21,7 @@ app.all('*', (req, res) => {
 
 app.listen(5000, () => {
     console.log("server listining on 500 ");
+    db.authenticate ();
     console.log("database connicted !!!!")
 })
 
