@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 var favicon = require('serve-favicon')
-const router = express.Router();
 var path = require('path')
 var testRouter = require('./routes/web');
 var bodyParser = require('body-parser')
@@ -20,7 +19,7 @@ app.all('*', (req, res) => {
 
 
 app.listen(5000, () => {
-    console.log("server listining on 500 ");
+    console.log("server listining on 5000 ");
     db.authenticate ();
     console.log("database connicted !!!!")
 })

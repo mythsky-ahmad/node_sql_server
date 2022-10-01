@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-var sequelize = new Sequelize('pal', 'sa', 'sas', {
+var sequelize = new Sequelize('pal', 'sa', 'sas', { // 'database', 'username', 'password'
     host: 'localhost',
     dialect: 'mssql',
     pool: {
