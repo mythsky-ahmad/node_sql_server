@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(236, 236, 236) !important;
+    font-family: Cairo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-d-c {
+    flex-direction: column;
+}
+
+.select {
+    padding: 15px 5px 15px 5px;
+}
+.pa-15{
+    padding: 15px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.mt-10{
+    margin-top: 10px;
+}

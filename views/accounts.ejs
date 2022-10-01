@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="/details" method="post">
+        <div class="flex flex-d-c">
+            <label for="selector">SELECT ANY USER</label>
+            <select class="select" name="user_name" id="selector">
+                <option selected value=""> select this ass user</option>
+                <% for(var i=0; i< data.length; i++) {%>
+                    <option value="<%= data[i].id %>">
+                        <%= data[i].name %>
+                    </option>
+                    <% } %>
+
+            </select>
+            <input class="  fs-18 mt-10" width="500px" type="submit" value="Get">
+        </div>
+    </form>
+
+
+</body>
+
+</html>
